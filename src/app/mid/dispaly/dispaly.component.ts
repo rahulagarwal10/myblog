@@ -1,6 +1,5 @@
 import {Component, OnInit, Input, OnChanges, SimpleChange, Output, EventEmitter} from '@angular/core';
 import {BlogserviceyService} from "../../blogservicey.service";
-import {ReversePipe} from "./reversesort";
 import {IItem} from "./IItem";
 
 @Component({

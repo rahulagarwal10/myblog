@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 
 const BASE_URL='http://localhost:4000/';
 const header={headers:new Headers({'Content-Type':'application/json'})}
+const header1 = { headers: new Headers({'Content-Type': 'application/json' , 'Accept': 'q=0.8;application/json;q=0.9'})};
+
 
 
 @Injectable()
@@ -23,7 +25,16 @@ export class BlogserviceyService {
   }
 
   deleteData(id,selected){
-    return this.http.delete(BASE_URL+selected+'/?id='+id,header).map(res=>res.json());
+    return this.http.delete(BASE_URL+selected+"/"+id,header).map(res=>res.json());
+
+  }
+
+  setRating(id,selected,stars){
+    let data={
+      id:id,
+      rating:stars
+    }
+    return this.http.patch(BASE_URL+selected+"/"+id,data,header1).map(res=>res.json());
 
   }
 

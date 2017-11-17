@@ -71,6 +71,7 @@ export class AddComponent implements OnInit{
         month: mo,
         date: d,
         logo: "",
+        rating:0
 
       };
       this.request.postData(post, this.selected).subscribe((data => {
@@ -82,7 +83,7 @@ export class AddComponent implements OnInit{
       this.name="";
       this.title="";
       this.desc="";
-      this.image
+      this.image=null;
     }
   }
 

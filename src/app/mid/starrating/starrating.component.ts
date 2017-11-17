@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {BlogserviceyService} from "../../blogservicey.service"
 
 @Component({
   selector: 'app-starrating',
@@ -7,13 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class StarratingComponent implements OnInit {
   @Input('blogid') blogid;
+  @Input('selected') selected;
 
-  constructor() { }
+  constructor(private request:BlogserviceyService) { }
 
   ngOnInit() {
   }
   getRating(star:number){
-
+this.request.setRating(this.blogid,this.selected,star).subscribe();
 
   }
 
