@@ -14,7 +14,7 @@
     <input type="text" id="myInput"  placeholder="Search for blogs.." title="Type in a name" (keyup)="search(srch.value)" #srch>
     <p class="categories">CATEGORIES</p>-->
     <ul class="listcat">
-    <li class="catlist" *ngFor="let item of categoryItems" [ngClass]="{catselect:item==selected}">
+    <li class="catlist" *ngFor="let item of categoryItems" [ngClass]="{catselect:item.item==selected}">
       <app-category [categoryItem]="item"  (click)="select(item.item)"></app-category>
     </li>
     </ul>
