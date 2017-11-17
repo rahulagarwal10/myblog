@@ -1,0 +1,23 @@
+<div id="blogs">
+<div class="row">
+  <div class="col-sm-3" >
+    <app-add  [selected]="selected" (addBlog)="addBlog($event)"></app-add>
+  </div>
+  <div class="col-sm-6">
+    <div class="selected"><b>BLOG: </b>{{selected}}</div>
+    <hr>
+    <app-dispaly [selected]="selected" [items]="items" (deleteData)="deleteData($event)"></app-dispaly>
+  </div>
+  <!--<div class="col-sm-1"></div>-->
+  <div class="col-sm-3">
+    <h3 class="search">Search</h3>
+    <input type="text" id="myInput"  placeholder="Search for blogs.." title="Type in a name" (keyup)="search(srch.value)" #srch>
+    <p class="categories">CATEGORIES</p>-->
+    <ul class="listcat">
+    <li class="catlist" *ngFor="let item of categoryItems" [ngClass]="{catselect:item==selected}">
+      <app-category [categoryItem]="item"  (click)="select(item.item)"></app-category>
+    </li>
+    </ul>
+  </div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<p class="post">Add Post</p><hr>
+
+<form style="margin-left: 5px">
+  <div class="form-group">
+    <label class="lbl" for="usr"> Your Name:</label>
+    <input type="text" class="form-control" id="usr" [(ngModel)]="name" name="name">
+  </div>
+  <div class="form-group">
+    <label class="lbl" for="title">Title</label>
+    <input type="text" class="form-control" id="title" [(ngModel)]="title" name="title">
+  </div>
+  <div class="form-group">
+    <label class="lbl" for="description">Description:</label>
+    <textarea class="form-control" rows="5" id="description" [(ngModel)]="desc" name="desc"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="file" class="file" id="image" #image>
+  </div>
+
+
+
+
+<button class="btn1 btn-primary" (click)="addPost(name,title,desc,image.files)">POST</button>
+
+</form>
+
+

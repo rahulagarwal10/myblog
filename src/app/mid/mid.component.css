@@ -1,0 +1,52 @@
+.listcat{
+  list-style: none;
+  margin-left: -66px;
+  font-family: "Roboto Slab";
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 15px !important;
+  font-weight: 400;
+  color: grey;
+  top:10px;
+}
+.catlist{
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+.categories{
+  font-weight: 700;
+  font-family:"Algerian";
+  font-size: 20px !important;
+}
+.selected{
+  margin-left:70px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-family: Algerian;
+  margin-top: 8px;
+}
+
+#myInput {
+  background-image: url('../../assets/search.png');
+  background-position: 10px 12px;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  width: 80%;
+  height:45px;
+  font-size: 16px;
+  padding: 10px 10px 12px 40px;
+
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.search{
+  font-family: Algerian;
+  font-size: 22px;
+}
+.catselect{
+  color:black;
+}

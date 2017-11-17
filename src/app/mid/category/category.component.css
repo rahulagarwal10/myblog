@@ -1,0 +1,23 @@
+.listcat{
+  list-style: none;
+  margin-left: -45px;
+  font-family: "Roboto Slab";
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 15px !important;
+  font-weight: 400;
+  color: black;
+  top:10px;
+}
+.catlist{
+  padding: 5px;
+  cursor: pointer;
+}
+
+.categories{
+  font-weight: 700;
+  font-family:"Algerian";
+  font-size: 20px !important;
+  cursor: pointer;
+
+}

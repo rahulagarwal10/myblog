@@ -1,0 +1,49 @@
+.text{
+  margin-top: -6px !important;
+  color:white;
+  font-size: 5px;
+  margin-left: -10px;
+  font-family: cursive
+
+}
+
+.date{
+  margin-left: 20%;
+}
+hr{
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+  font-weight: 800;
+}
+.abcd{
+  color:lightgrey;}
+.abc:hover .abcd{
+color:black;}
+.btn{
+  height:90px;
+  width:65px;
+  background-image: url(../../../assets/img4.jpg);
+  background-size: cover;
+  text-decoration-color: white;
+  border:none;
+  margin-top: 10px;
+
+}
+
+.text1{
+
+  color: white !important;
+  font-size: 40px !important;
+  margin-bottom: 20% !important;
+  margin-top: -10px !important;
+  font-weight: 700;
+
+
+
+
+
+}
+
+.title{
+  font-family: Algerian;
+}

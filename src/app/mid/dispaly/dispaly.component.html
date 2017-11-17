@@ -1,0 +1,30 @@
+<div *ngIf="items && items.length">
+
+<div *ngFor="let item of items.reverse()" class="abc">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="date">
+      <button class=btn><p class=text>{{item.month}}</p><p class=text1>{{item.date}}</p></button>
+    </div><br>
+  </div>
+  <div class="col-sm-8">
+    <hr class="titlerule"><p class="title" style="text-align: center; padding: 0px; margin-top: 10px;"><b>{{item.title}}</b></p><hr class="titlerule"><br>
+    <img src={{item.logo}} style="width:100%">
+    <p>{{item.desc}} </p>
+    <div class="row">
+      <div class="col-sm-8">
+    <p><i>Posted By:</i><b>{{item.name}}</b></p>
+    </div>
+      <div class="col-sm-4">
+    <app-starrating [blogid]="item.id"></app-starrating>
+  </div>
+    </div>
+</div>
+  <div class="col-sm-1 abcd">
+    <i class="fa fa-times" style="margin-top: 10px" (click)="deleteBlog(item.id)"></i>
+  </div>
+</div>
+
+</div>
+
+

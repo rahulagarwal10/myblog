@@ -1,0 +1,13 @@
+.a1{
+  background-color:black;
+  background-image: url(../assets/img3.png);
+  height:700px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 10% 10%;
+  -o-background-size: 10% 10%;
+  background-size: 100% 100%;
+  background-position: center ;
+
+}
+

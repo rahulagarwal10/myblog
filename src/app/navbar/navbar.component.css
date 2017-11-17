@@ -1,0 +1,43 @@
+.navbar{
+  top:40px;
+}
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+
+}
+
+.navbar-brand {
+  font-family: "Kaushan Script";
+  font-size: 40px;
+  color:#fed136 !important;
+  left: 8%;
+  position: absolute;
+}
+
+.navbar-default .nav li a {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 19px;
+  right:0px;
+
+}
+.navbar-default .nav li{
+  margin:10px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  right: 10%;
+  position: absolute;
+}
+
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
+  color: #fed136 !important;
+
+}
+.page-scroll{
+  font-weight: 700 !important;
+}
