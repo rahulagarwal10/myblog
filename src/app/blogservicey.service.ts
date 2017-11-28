@@ -38,5 +38,9 @@ export class BlogserviceyService {
 
   }
 
+  updateBlog(id,selected,data){
+    return this.http.patch(BASE_URL+selected+"/"+id,data,header1).map(res=>res.json());
+  }
+
 
 }

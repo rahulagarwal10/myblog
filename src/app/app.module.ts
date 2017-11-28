@@ -11,6 +11,7 @@ import {BlogserviceyService} from "./blogservicey.service"
 import {HttpModule} from "@angular/http"
 import {FormsModule} from "@angular/forms";
 import { StarratingComponent } from './mid/starrating/starrating.component';
+import { StarRatingModule } from 'angular-star-rating';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { StarratingComponent } from './mid/starrating/starrating.component';
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    StarRatingModule.forRoot()
+
   ],
   providers: [BlogserviceyService],
   bootstrap: [AppComponent]

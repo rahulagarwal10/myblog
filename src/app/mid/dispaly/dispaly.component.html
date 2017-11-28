@@ -16,15 +16,19 @@
     <p><i>Posted By:</i><b>{{item.name}}</b></p>
     </div>
       <div class="col-sm-4">
-    <app-starrating [blogid]="item.id" [selected]="selected"></app-starrating>
+    <app-starrating [blogid]="item.id" [selected]="selected" [rating]="item.rating"></app-starrating>
   </div>
     </div>
 </div>
-  <div class="col-sm-1 abcd">
-    <i class="fa fa-times" style="margin-top: 10px" (click)="deleteBlog(item.id)"></i>
+  <div class="col-sm-1">
+    <i class="fa fa-edit edit" style="margin-top: 10px;" (click)="updateBlog(item.id)"></i>
+
+    <i class="fa fa-times abcd" style="margin-top: 10px" (click)="deleteBlog(item.id)"></i>
+
   </div>
 </div>
 
+</div>
 </div>
 
 

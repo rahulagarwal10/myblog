@@ -51,3 +51,7 @@
   color:black;
   font-weight: 800;
 }
+.crop{
+  overflow: hidden;
+
+}

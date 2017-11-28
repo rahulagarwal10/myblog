@@ -14,14 +14,14 @@ export class AddComponent implements OnInit{
   desc:string;
   image:File[];
   @Output() addBlog=new EventEmitter<Object>();
-  @Input('selected') selected="Cricket";
+  @Input('selected') selected;
 
   constructor(private request:BlogserviceyService){
 
   }
 
   ngOnInit(){
-    this.selected="Cricket";
+
   }
 
 
@@ -31,9 +31,7 @@ export class AddComponent implements OnInit{
     var d = date.getDate();
     var m = date.getMonth();
     var mo = months[m] + " " + date.getFullYear();
-    document.getElementById("usr").innerHTML = "";
-    document.getElementById("title").innerText = "";
-    document.getElementById("description").innerText = "";
+
 
     let fileReader = new FileReader();
     fileReader.onload = (file) => {
@@ -54,7 +52,7 @@ export class AddComponent implements OnInit{
       this.name="";
       this.title="";
       this.desc="";
-      this.image=null;
+      this.image;
 
 
 

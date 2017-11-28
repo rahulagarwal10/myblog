@@ -13,7 +13,7 @@ export class MidComponent implements  OnInit{
 
 
 
-  selected:string="Cricket";
+  selected:string="Music";
   filteredItems:any[];
   categoryItems:Object[]=[
     {

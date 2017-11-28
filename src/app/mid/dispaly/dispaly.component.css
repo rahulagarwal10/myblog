@@ -16,9 +16,11 @@ hr{
   font-weight: 800;
 }
 .abcd{
+  cursor: pointer;
   color:lightgrey;}
 .abc:hover .abcd{
-color:black;}
+color:black;
+}
 .btn{
   height:90px;
   width:65px;
@@ -42,6 +44,15 @@ color:black;}
 
 
 
+}
+
+.edit{
+  visibility: hidden;
+}
+.abc:hover .edit {
+  visibility: visible;
+  color: black;
+  cursor: pointer;
 }
 
 .title{

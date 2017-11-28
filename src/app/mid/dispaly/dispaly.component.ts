@@ -43,4 +43,8 @@ export class DispalyComponent  {
     this.request.deleteData(id,this.selected).subscribe((data)=>{this.deleteData.emit(id);})
 
   }
+
+updateBlog(id:number){
+
+}
 }
